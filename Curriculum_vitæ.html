@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" media="screen and (max-width:991px)" href="./common_reposive.css">
+    <link rel="stylesheet" href="./cv.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+    </script>
+    <script type="text/javascript">
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("coultrans")
+            }
+            else {
+                $("nav").removeClass("coultrans")
+            }
+        })
+        $(document).ready(function () {
+            $(".tiroir i").click(function () {
+                $("nav ul").toggleClass("actv")
+            })
+        })
+    </script>
+    <title>Curriculum vitæ</title>
+</head>
+
+<body>
+    <header>
+        <div class="respbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/Cube.png" alt="Logo" name="home"></a>
+            </div>
+            <div class="tiroir">
+                <span><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./img/Cube.png" alt="Logo" name="home"></a>
+            </div>
+            <ul>
+                <li><a href="./Index.html">à propos de moi</a></li>
+                <li><a href="./Curriculum_vitæ.html" class="active">Curriculum vitæ</a></li>
+                <li><a href="./contact.html">me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="maincv">
+            <h1>Mon curriculum vitæ</h1>
+            <div id="pdfcont">
+                <embed src="./doc/CV Anthony HUYNH FRANÇAIS.pdf#zoom=150" type='application/pdf' />
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="mainfoot">
+            <div class="sec soc">
+                <h2>Mes réseaux</h2>
+                <p>Retrouver moi sur mes réseaux</p>
+                <ul class="social">
+                    <li><a href="https://github.com/Muugen"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://stackoverflow.com/users/14713552/huynh-anthony"><i class="fa fa-stack-overflow"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anthony--huynh/"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/KidoJinYuu"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Liens Utiles</h2>
+                <ul>
+                    <li><a href="./Index.html">à propos de moi</a></li>
+                    <li><a href="./Curriculum_vitæ.html">Curriculum vitæ</a></li>
+                    <li><a href="./contact.html">me contacter</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="cont">101 quai louis ferber,<br>
+                            94360 Bry-Sur-Marne<br>FRANCE</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                        <span class="cont" id="ph"><a href="tel:0753870957">(+33) 07 53 87 09 57</a></span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p class="cont"><a href="anthonyhuynh1204@gmail.com">anthonyhuynh1204@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>
+            Copyright &copy 2020 Anthony HUYNH. Tous droits réservés.
+        </p>
+    </div>
+</body>
+
+</html>

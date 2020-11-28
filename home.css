@@ -1,0 +1,202 @@
+/* main content */
+
+.mainfoot{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+}
+
+.mainsect{
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 10px 0px #9c9c9c;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+/* À propos de moi */
+
+.presbox{
+    display: flex;
+}
+
+.presbox .pres{
+    padding: 20px 50px 0px 50px;
+}
+
+.presbox div{
+    line-height: 300%;
+}
+
+.presbox img{
+    width: 350px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 10px 0px #9c9c9c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.pres{
+    box-sizing: border-box;
+    overflow: none;
+}
+
+.pres:nth-child(1){
+    border: none;
+    outline: none;
+}
+
+.pres h1{
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.aboutbox{
+    font-size: x-large;
+}
+
+
+.pres p{
+    font-size: x-large;
+    text-align: match-parent;
+}
+
+/* article */
+
+#sect2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-left: 15%;
+}
+
+.ongletart{
+    width: 100%;
+    margin: 50px 0px 50px 0px;
+}
+
+.imgart{
+    text-decoration: none;
+}
+
+.imgart img{
+    width: 300px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 10px 0px #9c9c9c;
+    transition: 0.2s;
+    float: left;
+    margin: 30px;
+}
+
+.imgart img:hover{
+    transform: scale(1.1);
+}
+
+.textart{
+    line-height: 50px;
+    padding: 20px;
+}
+
+.textart a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.textart h2{
+    font-size: xx-large;
+}
+
+.textart h2:hover{
+    color: #747474;
+    cursor: pointer;
+}
+
+.textart p{
+    font-size: x-large;
+    text-align: match-parent;
+}
+
+
+@media screen and (max-width:500px){
+    
+    .presbox img{
+        width: 200px;
+    }
+    
+    .pres h1{
+        font-size: large;
+    }
+
+    .aboutbox {
+        font-size: medium;
+    }
+
+    .pres p {
+        font-size: smaller;
+    }
+
+    .imgart{
+        display: flex;
+    }
+    
+    .imgart img{
+        display: grid;
+        place-items: center !important;
+        width: 200px  !important;
+    }
+
+    .textart{
+        margin: 0;
+        width: 100%;
+    }
+
+    .textart h2{
+        font-size: large;
+    }
+
+    .textart p{
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 615px){
+    
+    .presbox img{
+        width: 300px;
+    }
+    
+    .pres h1{
+        font-size: x-large;
+    }
+
+    .aboutbox {
+        font-size: large;
+    }
+
+    .pres p {
+        font-size: medium;
+    }
+    
+    .imgart img{
+        margin-left: 30px;
+    }
+
+    .textart h2{
+        font-size: x-large;
+    }
+
+    .textart p{
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1270px){
+    .imgart img{
+        margin-left: 0px;
+    }
+    .textart{
+        clear: left;
+    }
+}

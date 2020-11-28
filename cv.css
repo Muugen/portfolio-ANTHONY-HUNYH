@@ -1,0 +1,14 @@
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+#pdfcont embed{
+    width: 100%;
+    height: 1000px;
+}
+
+.maincv h1{
+    text-transform: uppercase;
+}
